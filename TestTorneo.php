@@ -47,7 +47,7 @@ $colP = [$objPartidoBasquet1, $objPartidoBasquet2, $objPartidoBasquet3, $objPart
 
 //1. Crear un objeto de la clase Torneo donde el importe base del premio es de: 100.000.
 //($pcolObjPartido, $ppremio)
-$objTorneo = new Torneo($colP, 100000);
+$objTorneo = new Torneo( 100000);
 
 
 
