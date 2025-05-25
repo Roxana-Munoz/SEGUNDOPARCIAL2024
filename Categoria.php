@@ -32,7 +32,7 @@ class Categoria{
     //METODO __TO STRING
     public function __toString(){
       
-        $cadena = "IdCategori: ".$this->getidcategoria()."\n";
+        $cadena = "IdCategoria: ".$this->getidcategoria()."\n";
         $cadena = $cadena. "descripcion: ".$this->getDescripcion()."\n";
     }
 }
