@@ -46,7 +46,7 @@ class PartidoBasquet extends Partido{
     public function __toString(){
         $msjToString = parent:: __toString();
 
-        $msjToString .= "\n\nCantidad de infracciones TSPB: ".$this->getCantInfracciones()."\nCoeficiente de penalización TSPB: ".$this->getCoefPenalizacio()."\n\n";
+        $msjToString .= "\n\nCantidad de infracciones : ".$this->getCantInfracciones()."\nCoeficiente de penalización : ".$this->getCoefPenalizacio()."\n\n";
 
         return $msjToString;
     }
