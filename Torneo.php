@@ -55,13 +55,7 @@ class Torneo{
 
         return $msjToString;
     }
-
-
-    /***************** OTROS MÉTODOS *****************/
-
-
-    /**
-     * Mostrar datos de los partidos */
+ /* Mostrar datos de los partidos */
     public function datosPartidos(){
         $colP = $this->getColObjPartido();
         $cadena = "";
@@ -121,9 +115,7 @@ public function darGanadores($deporte){
             //Verifico el tipo de deporte y si el partido es del tipo adecuado
             if (($deporte == "Futbol" && $partido instanceof PartidoFutbol) ||
                     ($deporte == "Basquet" && $partido instanceof PartidoBasquet)){
-
-                //Coloco el valor que me da $partido->darEquipoGanador() en una variable, porque si lo uso dentro del foreach, me va a llamar a la funcion de nuevo
-                $colGanadores = $partido->darEquipoGanador();
+                    $colGanadores = $partido->darEquipoGanador();
 
                 //Veo que sea un array vacio
                 if(!empty($colGanadores)){
